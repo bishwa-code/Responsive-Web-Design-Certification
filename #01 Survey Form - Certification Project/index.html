@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Form Project</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main>
+    <h1 id="title">BootCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve our bootcamp
+    </p>
+    <form id="survey-form" action="#">
+      <fieldset class="firstfs">
+        <label for="name" id="name-label">Name
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </label>
+        <label for="email" id="email-label">Email
+          <input id="email" type="email" placeholder="Enter your email" required />
+        </label>
+        <label for="number" id="number-label">Age (optional)
+          <input id="number" type="number" placeholder="Age" min="10" max="120" required />
+        </label>
+      </fieldset>
+
+      <fieldset class="secondfs">
+        <label for="dropdown">Which option best describes your current role?
+          <select name="roles" id="dropdown">
+            <option disabled selected value="">Select current role</option>
+            <option value="student">Student</option>
+            <option value="fullTimeJob">Full Time Job</option>
+            <option value="partTimeJob">Part Time Job</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset class="thirdfs">
+        <p>Would you recommend this BootCamp to a friend?</p>
+        <div class="thirdfs-option">
+          <label for="definitely">
+            <input id="definitely" name="recommend" value="definitely" type="radio" />
+            Definitely
+          </label>
+          <label for="maybe">
+            <input id="maybe" name="recommend" value="maybe" type="radio" />
+            Maybe
+          </label>
+          <label for="notSure">
+            <input id="notSure" name="recommend" value="notSure" type="radio" />
+            Not Sure
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="fourthfs">
+        <p>Want us to add something else in the BootCamp?</p>
+        <div class="fourthfs-option">
+          <label for="frontend">
+            <input type="checkbox" name="suggestion" id="frontend" value="frontend" />
+            Front-end Projects</label>
+          <label for="backend">
+            <input type="checkbox" name="suggestion" id="backend" value="backend" />
+            Back-end Projects</label>
+          <label for="challenges">
+            <input type="checkbox" name="suggestion" id="challenges" value="challenges" />
+            Challenges</label>
+          <label for="quizzes">
+            <input type="checkbox" name="suggestion" id="quizzes" value="quizzes" />
+            Quizzes</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="fifthfs">
+        <label for="comment">Any comments?
+          <textarea name="comment" id="comment" rows="10" cols="30" placeholder="Write your Suggestions..."></textarea>
+        </label>
+      </fieldset>
+
+      <div class="button">
+        <input id="submit" type="submit" value="Submit" />
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>
