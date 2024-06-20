@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>JS Documentation</header>
+        <div id="seperator"></div>
+        <a href="#Intro_to_JS" class="nav-link">Intro to JS</a>
+        <a href="#Prerequisites" class="nav-link">Prerequisites</a>
+        <a href="#JS_vs_Java" class="nav-link">JS vs Java</a>
+        <a href="#Hello_World_Example" class="nav-link">Hello World Example</a>
+        <a href="#Variables_in_JS" class="nav-link">Variables in JS</a>
+        <a href="#Declaring_Variables" class="nav-link">Declaring Variables</a>
+        <a href="#JavaScript_Scope" class="nav-link">JavaScript Scope</a>
+        <a href="#Reference" class="nav-link">Reference</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Intro_to_JS">
+            <header>Intro to JS</header>
+            <p>
+                JavaScript is a cross-platform, object-oriented scripting language. It
+                is a small and lightweight language. Inside a host environment (for
+                example, a web browser), JavaScript can be connected to the objects of
+                its environment to provide programmatic control over them.
+            </p>
+            <p>
+                JavaScript contains a standard library of objects, such as Array,
+                Date, and Math, and a core set of language elements such as operators,
+                control structures, and statements. Core JavaScript can be extended
+                for a variety of purposes by supplementing it with additional objects;
+                for example:
+            </p>
+            <ul>
+                <li>
+                    Client-side JavaScript extends the core language by supplying
+                    objects to control a browser and its Document Object Model (DOM).
+                    For example, client-side extensions allow an application to place
+                    elements on an HTML form and respond to user events such as mouse
+                    clicks, form input, and page navigation.
+                </li>
+                <li>
+                    Server-side JavaScript extends the core language by supplying
+                    objects relevant to running JavaScript on a server. For example,
+                    server-side extensions allow an application to communicate with a
+                    database, provide continuity of information from one invocation to
+                    another of the application, or perform file manipulations on a
+                    server.
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Prerequisites">
+            <header>Prerequisites</header>
+            <p>This guide assumes you have the following basic background:</p>
+            <ul>
+                <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                <li>
+                    Some programming experience. If you are new to programming, try one
+                    of the tutorials linked on the main page about JavaScript.
+                </li>
+                <li>
+                    A general understanding of the Internet and the World Wide Web
+                    (WWW).
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="JS_vs_Java">
+            <header>JS vs Java</header>
+            <p>
+                The JavaScript programming language, developed by Netscape, Inc., is
+                not part of the Java platform.
+            </p>
+            <p>
+                JavaScript does not create applets or stand-alone applications. In its
+                most common form, JavaScript resides inside HTML documents, and can
+                provide levels of interactivity to web pages that are not achievable
+                with simple HTML.
+            </p>
+            <pre>
+            <code>document.write("Hello World!");</code>
+        </pre>
+            <p>
+                Java is an OOP programming language while Java Script is an OOP
+                scripting language. Java creates applications that run in a virtual
+                machine or browser while JavaScript code is run on a browser only.
+                Java code needs to be compiled while JavaScript code are all in text.
+            </p>
+            <pre>
+            <code>class xyz  
+            {   
+              public static void main(String args[]){   
+                 System.out.println("Hello World");   
+              }   
+            }</code>
+        </pre>
+            <p>
+                In contrast to Java's compile-time system of classes built by
+                declarations, JavaScript supports a runtime system based on a small
+                number of data types representing numeric, Boolean, and string values.
+                JavaScript has a prototype-based object model instead of the more
+                common class-based object model. The prototype-based model provides
+                dynamic inheritance; that is, what is inherited can vary for
+                individual objects.
+            </p>
+        </section>
+
+        <section class="main-section" id="Hello_World_Example">
+            <header>Hello World Example</header>
+            <p>
+                To get started with writing JavaScript, open the Scratchpad and write
+                your first "Hello world" JavaScript code:
+            </p>
+            <pre>
+            <code>function greetMe(yourName) {
+                alert("Hello " + yourName); 
+            }</code>
+            <code>greetMe("World");</code></pre>
+            <p>
+                Select the code in the pad and hit Ctrl+R to watch it unfold in your
+                browser!
+            </p>
+        </section>
+
+        <section class="main-section" id="Variables_in_JS">
+            <header>Variables in JS</header>
+            <p>
+                You use variables as symbolic names for values in your application.
+                The names of variables, called identifiers, conform to certain rules.
+            </p>
+            <p>
+                A JavaScript identifier must start with a letter, underscore (_), or
+                dollar sign ($); subsequent characters can also be digits (0-9).
+                Because JavaScript is case sensitive, letters include the characters
+                "A" through "Z" (uppercase) and the characters "a" through "z"
+                (lowercase).
+            </p>
+            <p>
+                You can use ISO 8859-1 or Unicode letters such as å and ü in
+                identifiers. You can also use the Unicode escape sequences as
+                characters in identifiers. Some examples of legal names are
+                Number_hits, temp99, and _name.
+            </p>
+        </section>
+
+        <section class="main-section" id="Declaring_Variables">
+            <header>Declaring Variables</header>
+            <p>JavaScript Variables can be declared in 4 ways:</p>
+            <ul>
+                <li>Using var</li>
+                <li>Using let</li>
+                <li>Using const</li>
+            </ul>
+            <p>
+                Note: It is considered good programming practice to always declare
+                variables before use.
+            </p>
+            <pre>
+            <code>var x = 5;
+            let y = 6;
+            const z = x + y;</code>
+        </pre>
+        </section>
+
+        <section class="main-section" id="JavaScript_Scope">
+            <header>JavaScript Scope</header>
+            <p>Scope determines the accessibility (visibility) of variables.</p>
+            <p>JavaScript variables have 3 types of scope:</p>
+            <ul>
+                <li>Block scope</li>
+                <li>Function scope</li>
+                <li>Global scope</li>
+            </ul>
+            <p>
+                ES6 introduced two important new JavaScript keywords: let and const.
+                These two keywords provide Block Scope in JavaScript. Variables
+                declared inside a { } block cannot be accessed from outside the block:
+            </p>
+            <pre>
+            <code>{ let x = 2; }
+
+            // x can NOT be used here</code>
+        </pre>
+        </section>
+
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <ul>
+                <li>
+                    All the documentation in this page is taken from
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
