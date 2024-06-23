@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --color1: #06d6a0;
+  --color2: #26547c;
+  --color3: #fffcf9;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color2);
+}
+
+.container {
+  background-color: var(--color3);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  max-width: 80px;
+  display: grid;
+  place-items: center;
+  border-radius: 20%;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+#header-img {
+  width: 100%;
+  cursor: pointer;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin-left: 4rem;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.nav-link:first-child {
+  margin-left: 0;
+}
+
+.nav-link:hover {
+  background-color: var(--color1);
+  color: #f8f9fa;
+}
+
+#hero {
+  width: 100%;
+  padding: 1.5rem 2rem 7rem;
+}
+
+#hero-img {
+  width: 50%;
+  aspect-ratio: 10/9;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+#hero-description {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3.5rem;
+  line-height: 1.6;
+}
+#form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#email {
+  background-color: var(--color1);
+  color: #f8f9fa;
+  border: none;
+  outline: none;
+  width: 40%;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  text-overflow: ellipsis;
+}
+
+#email::placeholder {
+  color: #f8f9fa;
+}
+
+#submit {
+  background-color: var(--color1);
+  color: #f8f9fa;
+  border: none;
+  outline: none;
+  margin-left: 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#features {
+  width: 100%;
+  padding: 1rem 2rem 5rem;
+}
+.main-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.main-title::after {
+  content: "";
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15%;
+  border-radius: 50%;
+  border-bottom: 5px solid black;
+}
+
+.grid-container {
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.feature,
+.price-box:nth-child(2) {
+  background-color: var(--color1);
+}
+
+.feature,
+.price-box {
+  border-radius: 10px;
+  padding: 1.4rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.feature:nth-child(1) :first-child {
+  color: #f59f00;
+  filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.2));
+}
+.feature:nth-child(2) :first-child {
+  color: #ae3ec9;
+  filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.2));
+}
+.feature:nth-child(3) :first-child {
+  color: #f03e3e;
+  filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.2));
+}
+.feature:nth-child(4) :first-child {
+  color: #4263eb;
+  filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.2));
+}
+
+.feature :first-child {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature :last-child {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+#how-it-works {
+  width: 100%;
+  padding: 1rem 2rem 9rem;
+}
+
+#tut-video {
+  width: 100%;
+  padding-top: 2rem;
+  display: grid;
+  place-items: center;
+}
+
+#pricing {
+  width: 100%;
+  padding: 1rem 2rem 6rem;
+}
+
+.price-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-box:nth-child(1) input:hover {
+  background-color: var(--color1);
+}
+
+.price-box:nth-child(2) input:hover {
+  background-color: #0ca678;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.price-main-title {
+  margin-bottom: 4rem;
+}
+
+.price-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.price-mt {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+}
+
+.price-m {
+  font-size: 3.6rem;
+  font-weight: 800;
+  margin-right: 4px;
+}
+
+.price-benefits {
+  list-style-type: none;
+  font-weight: 500;
+}
+
+.price-benefits li:not(.price-benefits :last-child) {
+  margin-bottom: 1.6rem;
+}
+
+input[value="Buy Now"] {
+  padding: 0.8rem 1.8rem;
+  border: none;
+  outline: none;
+  width: 80%;
+  margin: 2rem auto 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: all 0.3s;
+}
+
+footer {
+  width: 100%;
+  background-color: #d3f9d8;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer * {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+footer :nth-child(1) {
+  color: #3b5bdb;
+  filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.15));
+}
+footer :nth-child(2) {
+  color: #c2255c;
+  filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.15));
+}
+footer :nth-child(3) {
+  color: #1971c2;
+  filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.15));
+}
+footer :nth-child(4) {
+  color: #e03131;
+  filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.15));
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-link {
+    margin-left: 2rem;
+    font-size: 1.4rem;
+  }
+
+  #hero-description {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #header {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+  .nav-link {
+    margin-left: 0.4rem;
+  }
+
+  #hero-img {
+    width: 70%;
+  }
+
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #email {
+    width: 60%;
+  }
+
+  #submit {
+    margin-top: 1.4rem;
+    margin-left: 0;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  #tut-video :first-child {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #hero-img {
+    width: 90%;
+  }
+}
